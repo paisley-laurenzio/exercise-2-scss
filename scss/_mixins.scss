@@ -1,13 +1,17 @@
-@mixin button($bg-color){
-    display: inline-block;
-    margin: 1em;
-    padding: .5em 1em;
-    border-radius: 3px;
-    text-decoration: none;
-    color: #fff;
-    background: $bg-color;
+@mixin icon1 {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.primary-btn{
-    @include button($blue);
+@mixin icon2 {
+    float: left;
+    margin: 0 auto;
+    width: 50%;
+}
+
+@mixin icon3 {
+    float: left;
+    margin: 0 auto;
+    width: 25%;
 }

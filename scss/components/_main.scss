@@ -6,15 +6,14 @@
 
 html {
     box-sizing: border-box;
-    
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;    
-    background-color: white;
-    color: #fff;
+    background-color: $white;
+    color: $white;
     font: normal 100%/1.5 sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $font;
     overflow-x: hidden;
 }
 
@@ -26,8 +25,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    margin: auto;
 }
-
 
 .pic {
     background-image: url("../img/forest-background-banner.jpg");
@@ -37,45 +36,27 @@ body {
     width: 100%;
 }
 
-.white {
-    color: white;
-    text-align: center;
-}
-
 i {
-    font-size: 10em;
-}
-
-a:hover {
-    color: black;
-}
-
-p {
-    margin: auto;
-}
-
-.bird {
-    float: left;
-    margin: 0 auto;
-    width: 100%;
+    font-size: $big;
 }
 
 a {
     text-decoration: none;
-    color: #536177
+    color: $blue;
+    &:hover {
+    color: $black;
+    }
 }
 
 h1 {
     font-weight: 100;
-    font-size: 3em     
+    font-size: $small;     
 }
 
 .content {
-    color: #536177;
+    color: $blue;
     text-align: center;
-    
 }
-
 
 .unit {
     text-align: center;
@@ -84,27 +65,18 @@ h1 {
 
 @media only screen and (min-width: 320px) {
 .bird {
-    float: left;
-    margin: 0 auto;
-    width: 100%;
+   @include icon1;
 }
 }
 
 @media only screen and (min-width: 620px) {
 .bird {
-    float: left;
-    margin: 0 auto;
-    width: 50%;
+    @include icon2;
 }
 }
 
 @media only screen and (min-width: 1000px) {
 .bird {
-    float: left;
-    margin: 0 auto;
-    width: 25%;
+    @include icon3;
 }
 }
-
-
-
