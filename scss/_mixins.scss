@@ -1,0 +1,13 @@
+@mixin button($bg-color){
+    display: inline-block;
+    margin: 1em;
+    padding: .5em 1em;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    background: $bg-color;
+}
+
+.primary-btn{
+    @include button($blue);
+}
